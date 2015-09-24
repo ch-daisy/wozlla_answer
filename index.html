@@ -51,6 +51,37 @@ JavaScript函数对象拥有一个内部属性[[Scope]]，该内部属性包含�
 <p>ajax 即“Asynchronous JavaScript and XML”（异步 JavaScript 和 XML），是一种用于创建快速动态网页的技术，Ajax 的核心是 JavaScript 对象 XmlHttpRequest，可以使用 JavaScript 向服务器提出请求并处理响应，而不阻塞用户。
 JSONP(JSON with Padding)是JSON的一种“使用模式”，可用于解决主流浏览器的跨域数据访问的问题，利用&lt;script&gt;元素的这个开放策略，网页可以得到从其他来源动态产生的 JSON 资料。</p>
 
+<h3>
+<a id="canvas技术题目" class="anchor" href="#canvas%E6%8A%80%E6%9C%AF%E9%A2%98%E7%9B%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>Canvas技术题目</h3>
+
+<h4>
+<a id="1-请列举十个以上常用的canvas2d的接口" class="anchor" href="#1-%E8%AF%B7%E5%88%97%E4%B8%BE%E5%8D%81%E4%B8%AA%E4%BB%A5%E4%B8%8A%E5%B8%B8%E7%94%A8%E7%9A%84canvas2d%E7%9A%84%E6%8E%A5%E5%8F%A3" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 请列举十个以上常用的canvas2d的接口</h4>
+
+<p>rect() fill() beginPath() moveTo() closePath() fillText() drawImage() putImageData() getImageData() createLinearGradient() createRadialGradient() addColorStop()</p>
+
+<h4>
+<a id="2-在canvas下如何优化文字的渲染速度" class="anchor" href="#2-%E5%9C%A8canvas%E4%B8%8B%E5%A6%82%E4%BD%95%E4%BC%98%E5%8C%96%E6%96%87%E5%AD%97%E7%9A%84%E6%B8%B2%E6%9F%93%E9%80%9F%E5%BA%A6" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 在canvas下如何优化文字的渲染速度？</h4>
+
+<p>使用链接 (chaining),对希望渲染的文本样式属性进行分组，相应地指定样式属性，然后调用闭合组的 CanvasText 对象的 append() 函数，并存储它供后续使用。渲染文本时，需要遍历这些组，然后指定样式并应用它。在迭代组时，保留之前的样式状态的工作记录，并在必要时覆盖这些记录。</p>
+
+<h4>
+<a id="3-写下几种composite-operation" class="anchor" href="#3-%E5%86%99%E4%B8%8B%E5%87%A0%E7%A7%8Dcomposite-operation" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 写下几种composite operation</h4>
+
+<p>source-atop source-in source-out source-over
+destination-atop destination-in destination-out destination-over 
+lighter darker xor copy</p>
+
+<h4>
+<a id="4-transform和settransform接口的区别" class="anchor" href="#4-transform%E5%92%8Csettransform%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%8C%BA%E5%88%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. transform和setTransform接口的区别</h4>
+
+<p>transform是替换绘图的当前转换矩阵，它会添加一个新的变换矩阵，再次绘制矩形
+setTransform是将当前转换重置为单位矩阵。然后运行 transform()，它会重置前一个变换矩阵然后构建新的矩阵</p>
+
+<h4>
+<a id="5-请列举几个比较出名的js游戏框架" class="anchor" href="#5-%E8%AF%B7%E5%88%97%E4%B8%BE%E5%87%A0%E4%B8%AA%E6%AF%94%E8%BE%83%E5%87%BA%E5%90%8D%E7%9A%84js%E6%B8%B8%E6%88%8F%E6%A1%86%E6%9E%B6" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. 请列举几个比较出名的js游戏框架</h4>
+
+<p>LimeJS Impact Jaws GameJs</p>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/ch-daisy/wozlla_answer">Wozlla answer</a> is maintained by <a href="https://github.com/ch-daisy">ch-daisy</a>.</span>
 
